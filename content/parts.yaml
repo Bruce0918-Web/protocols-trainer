@@ -1,0 +1,8 @@
+# 书的 7 个部分。读完一部分,就把它的 read 改成 true,这部分的卡片才会显示机制等字段。
+- { id: 1, zh: 睡眠, en: Sleep, read: false }
+- { id: 2, zh: 运动, en: Exercise, read: false }
+- { id: 3, zh: 压力控制, en: Stress control, read: false }
+- { id: 4, zh: 营养, en: Nutrition, read: false }
+- { id: 5, zh: 光照, en: Light, read: false }
+- { id: 6, zh: 专注 / 动力 / 学习, en: Focus, motivation and learning, read: false }
+- { id: 7, zh: 个人成长, en: Personal growth, read: false }

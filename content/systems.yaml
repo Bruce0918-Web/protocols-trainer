@@ -1,0 +1,63 @@
+# 底层系统卡。senses / outputs / timescale 由你自己写,写完对照书核对,再把 checked 改成 true。
+- id: circadian
+  zh: 生物钟
+  en: Circadian clock (SCN / ipRGC)
+  senses: ""      # 它感受什么
+  outputs: ""     # 它输出什么
+  timescale: ""   # 多久起效
+  page:
+  checked: false
+
+- id: sleep-pressure
+  zh: 睡眠压力
+  en: Sleep pressure (adenosine)
+  senses: ""
+  outputs: ""
+  timescale: ""
+  page:
+  checked: false
+
+- id: temperature
+  zh: 体温
+  en: Core body temperature
+  senses: ""
+  outputs: ""
+  timescale: ""
+  page:
+  checked: false
+
+- id: autonomic
+  zh: 自主神经
+  en: Autonomic nervous system (sympathetic / parasympathetic)
+  senses: ""
+  outputs: ""
+  timescale: ""
+  page:
+  checked: false
+
+- id: neuromodulators
+  zh: 神经递质
+  en: Neuromodulators (dopamine, noradrenaline, serotonin, acetylcholine, GABA)
+  senses: ""
+  outputs: ""
+  timescale: ""
+  page:
+  checked: false
+
+- id: hormones
+  zh: 激素与代谢
+  en: Hormones and metabolism (cortisol, melatonin, growth hormone, testosterone, insulin)
+  senses: ""
+  outputs: ""
+  timescale: ""
+  page:
+  checked: false
+
+- id: plasticity
+  zh: 神经可塑性
+  en: Neuroplasticity
+  senses: ""
+  outputs: ""
+  timescale: ""
+  page:
+  checked: false

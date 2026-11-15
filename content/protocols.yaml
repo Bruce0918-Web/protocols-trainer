@@ -1,0 +1,705 @@
+# Protocol 卡片。只有名称、部分、频率、时间、做法是预填的,其余由你自己写。
+# part: 属于书的第几部分(现在是推断的,不对就改)。 no: 书里的条目编号。
+# freq: daily = 每天; [mon, wed] = 指定星期几; 3 = 每周 3 次、哪天都行。
+# when: 可选。school = 只在上学日; noschool = 只在不上学的日子(周末和假期)。校历在 school.yaml。
+# evidence: strong / medium / weak / unsure。
+# checked: 四格机制链写完、填了页码、开卷核对过,才改成 true。没核对的卡片不会进入复习。
+
+- id: sleep-schedule
+  part: 1
+  no:
+  zh: "固定作息"
+  en: "Consistent sleep schedule"
+  freq: daily
+  time: "20:30"
+  how: "4:30 起床,20:15 上床,20:30 前睡着。前一晚 21:30 后才睡着,第二天可以 5:30 起。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: screens-off
+  part: 1
+  no:
+  zh: "19:30 后不碰电子产品"
+  en: "No screens before bed"
+  freq: daily
+  time: "19:30"
+  how: "19:30 关所有电子产品,手机放到卧室外面。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: last-meal
+  part: 1
+  no:
+  zh: "19:30 后不吃东西"
+  en: "Last meal well before bed"
+  freq: daily
+  time: "19:30"
+  how: "18:30 前吃完晚饭,19:30 后不再吃任何东西。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: caffeine-cutoff
+  part: 1
+  no:
+  zh: "12:00 后不碰咖啡因"
+  en: "Caffeine cutoff"
+  freq: daily
+  time: "12:00"
+  how: "中午 12 点以后咖啡、茶、能量饮料都不喝。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: caffeine-delay
+  part: 1
+  no:
+  zh: "起床后推迟咖啡因"
+  en: "Delayed caffeine"
+  freq: daily
+  when: school
+  time: "06:30"
+  how: "咖啡到学校再喝,不在起床后马上喝。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: hot-shower
+  part: 1
+  no:
+  zh: "睡前热水澡"
+  en: "Warm shower before bed"
+  freq: daily
+  time: "19:45"
+  how: "19:45 洗热水澡。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: cool-bedroom
+  part: 1
+  no:
+  zh: "凉卧室"
+  en: "Cool bedroom"
+  freq: daily
+  time: "20:15"
+  how: "卧室调到 18–20°C,手脚露在被子外面。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: magnesium
+  part: 1
+  no:
+  zh: "睡前甘氨酸镁"
+  en: "Magnesium glycinate"
+  freq: daily
+  time: "19:45"
+  how: "睡前 2 粒。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: nsdr
+  part: 1
+  no:
+  zh: "NSDR 15 分钟"
+  en: "Non-sleep deep rest"
+  freq: [mon, wed, sat, sun]
+  time: "17:45"
+  how: "躺下听引导音频,做满 15 分钟。周一、周三 17:45,周六 14:30,周日 15:15。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: strength
+  part: 2
+  no:
+  zh: "力量训练"
+  en: "Resistance training"
+  freq: [mon, wed, sat]
+  time: "05:05"
+  how: "早上练:热身 8 分钟 + 正式组,6:05 前做完。漏了挪到下一个不撸铁的早上,不挪到晚上。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: zone2
+  part: 2
+  no:
+  zh: "轻松跑(2 区)"
+  en: "Zone 2 cardio"
+  freq: [tue]
+  time: "17:30"
+  how: "能完整说话的速度,心率约 135–150,25 分钟。周四可选再跑 20 分钟。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: boxing
+  part: 2
+  no:
+  zh: "拳击(含全力段)"
+  en: "Boxing with all-out intervals"
+  freq: [fri, sat]
+  time: "13:00"
+  how: "60 分钟:跳绳、空击、沙袋(双数组每分钟最后 20 秒全力)、核心。周五放学后,周六 13:00。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: mobility
+  part: 2
+  no:
+  zh: "灵活性 10 分钟"
+  en: "Flexibility"
+  freq: [tue, thu, sun]
+  time: "19:30"
+  how: "关电子产品后做 10 分钟,不看屏幕。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: steps
+  part: 2
+  no:
+  zh: "每日步数"
+  en: "Daily steps"
+  freq: daily
+  time: "12:30"
+  how: "每天 ≥7,000 步,目标 10,000。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: cyclic-sighing
+  part: 3
+  no:
+  zh: "循环叹息 5 分钟"
+  en: "Cyclic sighing"
+  freq: daily
+  time: "07:50"
+  how: "两次吸气 + 一次长呼气,做满 5 分钟。上学日 7:50,周末 9:15 左右。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: cold-shower
+  part: 3
+  no:
+  zh: "冷水澡"
+  en: "Deliberate cold exposure"
+  freq: [tue, thu, fri, sun]
+  time: "04:35"
+  how: "只用淋浴,冷到很不舒服但安全,做完让身体自己回暖。11/16 起每次 1 分钟,11/24 起 2 分钟,12/1 起 3 分钟。头晕或生病不做。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: morning-drink
+  part: 4
+  no:
+  zh: "晨间补水加盐"
+  en: "Morning hydration with salt"
+  freq: daily
+  time: "04:45"
+  how: "水 500ml + 一小撮盐 + 半个柠檬。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: creatine
+  part: 4
+  no:
+  zh: "肌酸 5g"
+  en: "Creatine"
+  freq: daily
+  time: "04:45"
+  how: "每天 5g,放在晨间饮品里。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: fermented
+  part: 4
+  no:
+  zh: "发酵食品"
+  en: "Fermented foods"
+  freq: daily
+  time: "06:30"
+  how: "早餐原味开菲尔 200ml,下午原味希腊酸奶 200g。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: kiwi
+  part: 4
+  no:
+  zh: "猕猴桃 2 个"
+  en: "Kiwi"
+  freq: daily
+  time: "10:21"
+  how: "每天 2 个。上学日在 10:21 的课间吃(10:00 还在上第 2 节)。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: water
+  part: 4
+  no:
+  zh: "每天 3L 水"
+  en: "Daily water"
+  freq: daily
+  time: "12:00"
+  how: "每天 3L,拳击日再加一瓶。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: whole-foods
+  part: 4
+  no:
+  zh: "不吃超加工食品"
+  en: "No ultra-processed food"
+  freq: daily
+  time: "12:00"
+  how: "配料表 5 种以内、都认识才吃。85% 黑巧每天最多 15g。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: vegetables
+  part: 4
+  no:
+  zh: "午饭晚饭各两拳蔬菜"
+  en: "Vegetables twice a day"
+  freq: daily
+  time: "11:45"
+  how: "午饭(上学日 11:45)、晚饭各两拳蔬菜。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: vitd-fishoil
+  part: 4
+  no:
+  zh: "维生素 D + 鱼油"
+  en: "Vitamin D and fish oil"
+  freq: daily
+  time: "11:45"
+  how: "午饭时(上学日 11:45)维生素 D 1 粒 + 鱼油 2 粒。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: zinc
+  part: 4
+  no:
+  zh: "锌(隔天)"
+  en: "Zinc"
+  freq: 3
+  time: "18:30"
+  how: "晚饭时 1 粒,隔天一次(按每周 3 次算)。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: post-meal-walk
+  part: 4
+  no:
+  zh: "晚饭后走 5–10 分钟"
+  en: "Post-meal walk"
+  freq: daily
+  time: "18:35"
+  how: "晚饭后走 5–10 分钟。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: bright-wake
+  part: 5
+  no:
+  zh: "起床开亮灯"
+  en: "Bright light on waking"
+  freq: daily
+  time: "04:30"
+  how: "日出前屋里越亮越好:灯全开,不拿手机。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: morning-sun
+  part: 5
+  no:
+  zh: "日出后户外光"
+  en: "Morning sunlight"
+  freq: daily
+  time: "06:40"
+  how: "晴天 10 分钟、多云 20 分钟、阴天 30 分钟,不戴墨镜。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: midday-sun
+  part: 5
+  no:
+  zh: "中午晒太阳露皮肤"
+  en: "Midday sun on skin"
+  freq: daily
+  when: noschool
+  time: "11:10"
+  how: "20–30 分钟,尽量露出手臂和腿,选中午最暖的时候。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: afternoon-light
+  part: 5
+  no:
+  zh: "下午 / 傍晚户外光"
+  en: "Afternoon light"
+  freq: daily
+  time: "15:30"
+  how: "上学日 3:30 放学后在户外 10 分钟(午饭只有 30 分钟,12:15 起是 Co-Lab 写作业);不上学的日子 16:00 左右户外 10 分钟。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: dim-evening
+  part: 5
+  no:
+  zh: "晚上只开暖色暗灯"
+  en: "Dim lights in the evening"
+  freq: daily
+  time: "19:30"
+  how: "19:30 后只开暖色台灯,不开顶灯;半夜醒了不开大灯、不看时间。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: meditation
+  part: 6
+  no:
+  zh: "晨间冥想"
+  en: "Morning meditation"
+  freq: daily
+  time: "04:30"
+  how: "注意力放在呼吸和身体感觉,走神就拉回来。平时 5 分钟,撸铁日 2 分钟。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: mental-rehearsal
+  part: 6
+  no:
+  zh: "心理演练"
+  en: "Mental rehearsal"
+  freq: [mon, wed, fri, sat]
+  time: "04:45"
+  how: "闭眼把今天要练的动作或组合完整过一遍。撸铁前 1 分钟,拳击前 3 分钟。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: focus-block
+  part: 6
+  no:
+  zh: "早上深度学习块"
+  en: "Morning focus bout"
+  freq: [tue, thu, fri, sun]
+  time: "05:00"
+  how: "75 分钟(周日预习约 90 分钟)。开始前写下今天要完成什么。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: visual-focus
+  part: 6
+  no:
+  zh: "开始前盯一个点"
+  en: "Visual focus warm-up"
+  freq: daily
+  time: "05:00"
+  how: "学习或写作业前,盯一个点 30–60 秒。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: phone-away
+  part: 6
+  no:
+  zh: "学习时手机不在身边"
+  en: "Phone out of reach"
+  freq: daily
+  time: "05:00"
+  how: "学习时手机放另一个房间;上课放书包最底层。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: gap-pauses
+  part: 6
+  no:
+  zh: "学习中停 10 秒"
+  en: "Gap effects"
+  freq: [tue, thu, fri]
+  time: "05:00"
+  how: "早上学习时,每段之间停 10 秒。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: effort-reward
+  part: 6
+  no:
+  zh: "努力即奖励"
+  en: "Effort as the reward"
+  freq: [mon, tue, wed, thu, fri, sat]
+  time: "06:05"
+  how: "练完或学完对自己说一句“刚才难受的那段就是在变强”,不拿手机奖励自己。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: self-test
+  part: 6
+  no:
+  zh: "学完自测"
+  en: "Self-testing"
+  freq: daily
+  time: "09:15"
+  how: "学习结束前 1–5 分钟不看资料自测;每节下课(9:15、10:20、11:45、1:50、2:55)用 1 分钟回想刚学的 3 个点。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: woop
+  part: 7
+  no:
+  zh: "WOOP 10 分钟"
+  en: "WOOP"
+  freq: [sun]
+  time: "15:00"
+  how: "纸上写:下周最难的目标、最好的结果、每个障碍、每个障碍的 if-then。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
+
+- id: gratitude
+  part: 7
+  no:
+  zh: "感恩 1 分钟"
+  en: "Gratitude"
+  freq: daily
+  time: "20:10"
+  how: "感恩一件具体的、别人对你好的小事。"
+  chain: { act: "", trigger: "", change: "", result: "" }   # 行为 → 触发 → 改变 → 结果
+  systems: []        # 引用 systems.yaml 里的 id
+  adapt: []          # - { when: "情况", then: "怎么改" }
+  evidence:
+  benefit: ""        # 预期好处有多大
+  view: ""           # 我的看法,含“适不适合现在的我”
+  page:
+  checked: false
